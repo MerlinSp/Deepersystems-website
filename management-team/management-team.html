@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
+<html>
+  <head>
+      <title>Krisart Cabeleireiro</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/management-team.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,300,200,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script
+		  src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+		  integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+		  crossorigin="anonymous"></script>
+	  <script
+		  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		  crossorigin="anonymous"></script>
+
+  	
+	  <script type="text/javascript">
+		$(function(){
+		    var title1Top = $('#title1').offset().top;
+		    var title2Top = $('#title2').offset().top;
+		    var title3Top = $('#title3').offset().top;
+		    var title4Top = $('#title4').offset().top;
+		    var title5Top = $('#title5').offset().top;
+
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 100 > title1Top ) {
+		                    $('#title1').css({position: 'fixed', top: '100px'});
+		                    $('#content1').css('margin-top', '120px');     
+		            } else if ( $(window).scrollTop() + 100 <= title1Top ){
+		                    $('#title1').css({position: 'static', top: '0px'});
+		                    $('#content1').css('margin-top', '0px');
+		            
+		            
+
+		            } if ( $(window).scrollTop() + 220 >= title2Top ){
+		                    $('#title1').css({position: 'absolute', top: title2Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title2Top ) {
+		                    $('#title2').css({position: 'fixed', top: '100px'});
+		                    $('#content2').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title2Top ){
+		                    $('#title2').css({position: 'static', top: '0px'});
+		                    $('#content2').css('margin-top', '0px');
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title3Top ){
+		                    $('#title2').css({position: 'absolute', top: title3Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title3Top ) {
+		                    $('#title3').css({position: 'fixed', top: '100px'});
+		                    $('#content3').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title3Top ){
+		                    $('#title3').css({position: 'static', top: '0px'});
+		                    $('#content3').css('margin-top', '0px');
+		            
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title4Top ){
+		                    $('#title3').css({position: 'absolute', top: title4Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title4Top ) {
+		                    $('#title4').css({position: 'fixed', top: '100px'});
+		                    $('#content4').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title4Top ){
+		                    $('#title4').css({position: 'static', top: '0px'});
+		                    $('#content4').css('margin-top', '0px');
+		            
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title5Top ){
+		                    $('#title4').css({position: 'absolute', top: title5Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title5Top ) {
+		                    $('#title5').css({position: 'fixed', top: '100px'});
+		                    $('#content5').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title5Top ){
+		                    $('#title5').css({position: 'static', top: '0px'});
+		                    $('#content5').css('margin-top', '0px');
+		            
+		            
+
+		            
+		            }
+		    });
+		});
+
+		$(window).resize(function(){
+		    var title1Top = $('#title1').offset().top;
+		    var title2Top = $('#title2').offset().top;
+		    var title3Top = $('#title3').offset().top;
+		    var title4Top = $('#title4').offset().top;
+		    var title5Top = $('#title5').offset().top;
+
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 100 > title1Top ) {
+		                    $('#title1').css({position: 'fixed', top: '100px', width: '100%'});
+		                    $('#content1').css('margin-top', '120px');     
+		            } else if ( $(window).scrollTop() + 100 <= title1Top ){
+		                    $('#title1').css({position: 'static', top: '0px'});
+		                    $('#content1').css('margin-top', '0px');
+		            
+		            
+
+		            } if ( $(window).scrollTop() + 220 >= title2Top ){
+		                    $('#title1').css({position: 'absolute', top: title2Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title2Top ) {
+		                    $('#title2').css({position: 'fixed', top: '100px'});
+		                    $('#content2').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title2Top ){
+		                    $('#title2').css({position: 'static', top: '0px'});
+		                    $('#content2').css('margin-top', '0px');
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title3Top ){
+		                    $('#title2').css({position: 'absolute', top: title3Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title3Top ) {
+		                    $('#title3').css({position: 'fixed', top: '100px'});
+		                    $('#content3').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title3Top ){
+		                    $('#title3').css({position: 'static', top: '0px'});
+		                    $('#content3').css('margin-top', '0px');
+		            
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title4Top ){
+		                    $('#title3').css({position: 'absolute', top: title4Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title4Top ) {
+		                    $('#title4').css({position: 'fixed', top: '100px'});
+		                    $('#content4').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title4Top ){
+		                    $('#title4').css({position: 'static', top: '0px'});
+		                    $('#content4').css('margin-top', '0px');
+		            
+		            
+		            
+
+		            
+		            } if ( $(window).scrollTop() + 220 >= title5Top ){
+		                    $('#title4').css({position: 'absolute', top: title5Top - 120 });
+		            } if ( $(window).scrollTop() + 100 > title5Top ) {
+		                    $('#title5').css({position: 'fixed', top: '100px'});
+		                    $('#content5').css('margin-top', '120px');
+		            }else if ( $(window).scrollTop() + 100 <= title5Top ){
+		                    $('#title5').css({position: 'static', top: '0px'});
+		                    $('#content5').css('margin-top', '0px');
+		            
+		            
+
+		            
+		            }
+		    });
+		});
+
+	  </script>
+  		
+
+  	</head>
+  	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" id="menu-header">
+	        <div class="row menu-row">
+	          <div class="col-md-4 logo">
+	          	<img src="img/logo.png" class="img-responsive img-logo">
+	          </div>
+	          <div class="col-md-8 title">
+	          	
+	          </div>
+	        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="content-title">
+          <h1>Nerve Segmentation</h1>
+        </div>
+        <div class="col-md-12 partner-title-container" id="title1">
+        	<div class="container partner-title">
+        		<h1>Alexander Lehmann</h1>
+	        		<a href="https://www.facebook.com/chessexpress" target="_blank">
+		        		<div class="facebook-button shadow-item">
+		        			<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+		        	<a href="https://www.linkedin.com/in/alex-lehmann-aa78384/" target="_blank">
+		        		<div class="linkedin-button shadow-item">
+		        			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>	
+		        	<a href="mailto:alex@deepersystems.com">
+		        		<div class="mail-button shadow-item">
+		        			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+        	</div>
+        </div>
+        <div class="col-md-12 partner-content" id="content1">
+	        <div class="container partner-container">	
+		        <div class="row">	
+		        	<div class="col-md-12 partner-img-text">
+		        		<img src="img/alex.jpg" class="img-responsive partner-img">
+		        		<p>Mr. Lehmann spent his graduate-school years building particle detectors at Fermi National Laboratory as an experimental particle physicist while attending the University of Michigan  Ann Arbor.  Mr. Lehmann is the original founder of our company and serves as our Chief Executive Officer overseeing all aspects of our business.  An accomplished entrepreneur, Mr. Lehmann spent his formative years as a professional games player (chess, poker, and backgammon) while running several games-related startups.  Mr. Lehmann's most notable recent project was serving as CTO to Anchor Loans LP.  During his five-year tenure, Mr. Lehmann designed and implemented technology that enabled a regional company to scale to a nation-wide leader in the complex business of hard money lending.  His current research interests include exploitive game theory, sentiment detection through image and video, and deep learning.  Mr. Lehmann resides in Portugal with his wife and two sons.  In his free time he enjoys speed chess, poker, and cooking.</p>
+		        		
+		        	</div>
+		        </div>
+		        <div class="row hr-row">
+		        	<hr>
+		        </div>
+		        <div class="row">
+			        	<div class="col-md-12 partner-stud">
+			        			
+		        			<div class="uni-1">
+		        				<div>
+		        					<img src="img/alex-uni1.png" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>SUNY Stony Brook</h4>
+		        					<h5>B.S. Physics</h5>
+		        					<h5>2000</h5>
+		        				</div>
+		        			</div>
+		        			<div class="uni-2">
+		        				<div>
+		        					<img src="img/alex-uni2.jpg" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>University of Michigan</h4>
+		        					<h5>M.S. Particle Physics</h5>
+		        					<h5>2001</h5>
+		        				</div>
+		        			</div>
+			        		
+			        	</div>
+			    </div> 	
+	        </div>
+        </div>
+        <div class="col-md-12 partner-title-container" id="title2">
+        	<div class="container partner-title">
+        		<h1>Vitaliy Ziskin</h1>
+	        		<a href="https://www.facebook.com/vitaliy.ziskin" target="_blank">
+		        		<div class="facebook-button shadow-item">
+		        			<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+		        	<a href="https://www.linkedin.com/in/vitaliy-ziskin-992b24b/" target="_blank">
+		        		<div class="linkedin-button shadow-item">
+		        			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>	
+		        	<a href="mailto:vziskin@deepersystems.com">
+		        		<div class="mail-button shadow-item">
+		        			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+        	</div>
+        </div>
+        <div class="col-md-12 partner-content" id="content2">
+	        <div class="container partner-container">	
+		        <div class="row">	
+		        	<div class="col-md-12 partner-img-text" id="pit2">
+		        		<img src="img/vitaly.jpg" class="img-responsive partner-img">
+		        		<p>Dr. Ziskin is an MIT trained physicist with a broad range of R&D expertise and over 15 years of experience in sensor instrumentation and algorithms.  Dr. Ziskin serves as our Chief Operations Officer and oversees our technology consulting business, bringing science-based solutions to industrial applications.  Previously, Dr. Ziskin worked as a principal physicist at Physical Sciences Inc, MA, where he led the development of new radiation sensor development.  Before that, he was a principal engineer at L-3 Communications, MA, where, among other things, he led the development of the novel 4th generation CT X-Ray scanner.  Dr. Ziskin authored and co-authored multiple publications and has six patents in the field of sensors and imaging algorithms.  His current research interests include applications of machine vision, artificial intelligence and deep neutral networks to everyday problems.  Dr. Ziskin resides in Boston with his wife and two daughters.  In his free time he enjoys soccer, listening to classic rock and travel.</p>
+		        		
+		        	</div>
+		        </div>
+		        <div class="row hr-row">
+		        	<hr>
+		        </div>
+		        <div class="row">
+			        	<div class="col-md-12 partner-stud">
+			        			
+		        			<div class="uni-1">
+		        				<div>
+		        					<img src="img/alex-uni1.png" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>SUNY Stony Brook</h4>
+		        					<h5>B.S. Physics</h5>
+		        					<h5>1998</h5>
+		        				</div>
+		        			</div>
+		        			<div class="uni-2" id="uni2-vital">
+		        				<div>
+		        					<img src="img/vitaliy-uni2.gif" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>University of Michigan</h4>
+		        					<h5>Ph.D, Nuclear Physics</h5>
+		        					<h5>2005</h5>
+		        				</div>
+		        			</div>
+			        		
+			        	</div>
+			    </div> 	
+	        </div>
+        </div>
+        <div class="col-md-12 partner-title-container" id="title3">
+        	<div class="container partner-title">
+        		<h1>Jo&atilde;o Paulo Farias</h1>
+	        		<a href="https://www.facebook.com/profile.php?id=1232145064" target="_blank">
+		        		<div class="facebook-button shadow-item">
+		        			<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+		        	<a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-farias-a62b8a4/" target="_blank">
+		        		<div class="linkedin-button shadow-item">
+		        			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>	
+		        	<a href="mailto:jp@deepersystems.com">
+		        		<div class="mail-button shadow-item">
+		        			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+        	</div>
+        </div>
+        <div class="col-md-12 partner-content" id="content3">
+	        <div class="container partner-container">	
+		        <div class="row">	
+		        	<div class="col-md-12 partner-img-text" id="pit2">
+		        		<img src="img/joao.jpg" class="img-responsive partner-img">
+		        		<p>Mr. Farias is an UFRN-trained software developer with 15 years of experience in software design and algorithms.  He currently serves as our lead developer and is responsible for designing and coding our top-level algorithms.  Mr. Farias is a founding partner and created our original gaming AIs and interfaces in the early 2000s.  Previously, Mr. Farias worked as a lead developer at Anchor Loans, CA, where he led the design and development of their innovative real-estate software.   His current research interests include deep learning, virtual and augmented reality, and advanced game engines.  Originally born in Natal, Brazil, Mr. Farias resides in Southern Portugal with his wife and two daughters.  In his free time he enjoys playing soccer, MMORPGs, and tinkering with drones.
+</p>
+		        		
+		        	</div>
+		        </div>
+		        <div class="row hr-row">
+		        	<hr>
+		        </div>
+		        <div class="row">
+			        	<div class="col-md-12 partner-stud">
+			        			
+		        			<div class="uni-1" id="uni1-joao">
+		        				<div>
+		        					<img src="img/joao-uni1.png" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>Universidade Federal do Rio Grande do Norte</h4>
+		        					<h5>B.S Computer Science</h5>
+		        					<h5>2005</h5>
+		        				</div>
+		        			</div>
+			        	</div>
+			    </div> 	
+	        </div>
+        </div>
+        <div class="col-md-12 partner-title-container" id="title4">
+        	<div class="container partner-title">
+        		<h1>Claudiu Saftoiu</h1>
+	        		<a href="https://www.facebook.com/csaftoiu" target="_blank">
+		        		<div class="facebook-button shadow-item">
+		        			<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+		        	<a href="https://www.linkedin.com/in/claudiu-saftoiu-59b6b215/" target="_blank">
+		        		<div class="linkedin-button shadow-item">
+		        			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>	
+		        	<a href="mailto:claudiu@deepersystems.com">
+		        		<div class="mail-button shadow-item">
+		        			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+        	</div>
+        </div>
+        <div class="col-md-12 partner-content" id="content4">
+	        <div class="container partner-container">	
+		        <div class="row">	
+		        	<div class="col-md-12 partner-img-text" id="pit2">
+		        		<img src="img/claude.jpg" class="img-responsive partner-img">
+		        		<p>Claudiu Saftoiu graduated Brown University in 2010 with a Bachelor of Science with Honors . in computer science.    Mr. Saftoiu currently serves as the Chief Technical Officer of Deeper Systems and is a driving force behind our development team.  His exceptional programming abilities combine well with his management skills to train and scale our developers and middle management.  He is responsible for evaluating new technologies, creating innovative deep learning solutions, and designing the company’s technology stack to minimize human error and maximize efficiency.  Previously Mr. Saftoiu held the position of lead developer for Game Algorithms were he used his skills to create unique solutions for game play analysis in poker and backgammon.  Born in Romania and raised in New York City, Mr. Saftoiu currently resides in San Diego.  In his spare time, he enjoys rock climbing, music, and writing.</p>
+		        		
+		        	</div>
+		        </div>
+		        <div class="row hr-row">
+		        	<hr>
+		        </div>
+		        <div class="row">
+			        	<div class="col-md-12 partner-stud">
+			        			
+		        			<div class="uni-1">
+		        				<div>
+		        					<img src="img/claude-uni1.jpg" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>Stuyvesant</h4>
+		        					<h5>Graduated</h5>
+		        					<h5>​2006</h5>
+		        				</div>
+		        			</div>
+		        			<div class="uni-2" id="uni2-vital">
+		        				<div>
+		        					<img src="img/claude-uni2.gif" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>Brown University</h4>
+		        					<h5>B.S. Computer Science</h5>
+		        					<h5>​2010</h5>
+		        				</div>
+		        			</div>
+			        		
+			        	</div>
+			    </div> 	
+	        </div>
+        </div>
+        <div class="col-md-12 partner-title-container" id="title5">
+        	<div class="container partner-title">
+        		<h1>Frederico Caroli</h1>
+	        		<a href="https://www.facebook.com/fredcaroli" target="_blank">
+		        		<div class="facebook-button shadow-item">
+		        			<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+		        	<a href="https://www.linkedin.com/in/frederico-caroli-539a56139/" target="_blank">
+		        		<div class="linkedin-button shadow-item">
+		        			<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>	
+		        	<a href="mailto:fred@deepersystems.com">
+		        		<div class="mail-button shadow-item">
+		        			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+		        		</div>
+		        	</a>
+        	</div>
+        </div>
+        <div class="col-md-12 partner-content" id="content5">
+	        <div class="container partner-container">	
+		        <div class="row">	
+		        	<div class="col-md-12 partner-img-text" id="pit2">
+		        		<img src="img/fred.jpg" class="img-responsive partner-img">
+		        		<p>Mr. Caroli serves as the Chief Science Officer of Deeper Systems.  He is responsible for researching and developing deep learning techniques, verifying results and viability and keeping the coders up to date on adopted techniques.  Mr. Caroli has a BS in Computer Science from the Federal University of Rio de Janeiro.  During his studies he developed a fully-fledged deep learning framework that was presented at an international conference, used to teach deep learning to students in Brazil, and used as a research tool in Germany.  Previously, Mr. Caroli worked as a research software engineer intern at IBM Research doing sentiment analysis for Watson.  Caroli was born, raised, and currently resides in Rio de Janeiro.  His hobbies include brewing beer, music, cooking, and studying.</p>
+		        		
+		        	</div>
+		        </div>
+		        <div class="row hr-row">
+		        	<hr>
+		        </div>
+		        <div class="row">
+			        	<div class="col-md-12 partner-stud">
+			        			
+		        			<div class="uni-1" id="fred-uni1">
+		        				<div>
+		        					<img src="img/frederico-uni1.png" class="img-responsive img-uni">
+		        				</div>
+		        				<div>
+		        					<h4>Universidade Federal Do Rio De Janeiro</h4>
+		        					<h5>B.S Computer Science</h5>
+		        					<h5>​2015</h5>
+		        				</div>
+		        			</div>
+			        	</div>
+			    </div> 	
+	        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
+<html>
+  <head>
+      <title>Krisart Cabeleireiro</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/medical-image-analysis.css">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,300,200,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script
+		  src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+		  integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+		  crossorigin="anonymous"></script>
+	  <script
+		  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		  crossorigin="anonymous"></script>
+
+
+	  <script type="text/javascript">
+	  	jQuery(window).scroll(function (e) {
+		    if (jQuery(this).scrollTop() > 350) {
+		        if (jQuery('.our-mission').hasClass('visible') == false) {
+		            jQuery('.our-mission').animate({
+		                left: '0px'
+		            }, 2000, 'easeOutExpo', function () {
+		                jQuery('.our-mission').addClass('visible')
+		            });
+		        }
+		    } else {
+		        if (jQuery('.our-mission').hasClass('visible') == true) {
+		            jQuery('.our-mission').stop(true, false).animate({
+		                left: '-1500px'
+		            }, 700, function () {
+		                jQuery('.our-mission').removeClass('visible')
+		            });
+		            e.preventDefault();
+		        }
+		    }
+		});
+
+
+	  	$(window).on("mousewheel", function(){
+  			$('body, html').stop();  
+		});
+		
+	  </script>
+      
+
+      <!-- <script type="text/javascript">
+		$(function(){
+		    var stickyHeaderTop = $('#content-title').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 80 > stickyHeaderTop ) {
+		                    $('#content-title').css({position: 'fixed', top: '0px'});
+		                    $('#content1').css('margin-top', '180px');
+
+		        
+		            } else if ( $(window).scrollTop() + 80 <= stickyHeaderTop ){
+		                    $('#content-title').css({position: 'static', top: '0px'});
+		            }
+		            if( $(window).scrollTop() == 0) {
+		                    $('#content1').css('margin-top', '0px');
+		        
+		            } 
+
+		    });
+		});
+
+		$(function(){
+		    var stickyHeaderTop1 = $('#content-title1').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 80 > stickyHeaderTop1 ) {
+		                    $('#content-title1').css({position: 'fixed', top: '80px'});
+		                    $('#content2').css('margin-top', '80px');
+		        
+		            } else if ( $(window).scrollTop() + 80 <= stickyHeaderTop1 ){
+		                    $('#content-title1').css({position: 'static', top: '0px'});
+		                    $('#content2').css('margin-top', '0px');
+		            }
+		          
+
+		    });
+		});
+
+		$(window).resize(function(){
+		    var stickyHeaderTop = $('#content-title').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 80 > stickyHeaderTop ) {
+		                    $('#content-title').css({position: 'fixed', top: '0px'});
+		                    $('#content1').css('margin-top', '180px');
+		        
+		            } else if ( $(window).scrollTop() + 80 <= stickyHeaderTop ){
+		                    $('#content-title').css({position: 'static', top: '0px'});
+		            }
+		            if( $(window).scrollTop() == 0) {
+		                    $('#content1').css('margin-top', '0px');
+		        
+		            } 
+
+		    });
+		});
+
+		$(window).resize(function(){
+		    var stickyHeaderTop1 = $('#content-title1').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 80 > stickyHeaderTop1 ) {
+		                    $('#content-title1').css({position: 'fixed', top: '80px'});
+		                    $('#content2').css('margin-top', '80px');
+		        
+		            } else if ( $(window).scrollTop() + 80 <= stickyHeaderTop1 ){
+		                    $('#content-title1').css({position: 'static', top: '0px'});
+		                    $('#content2').css('margin-top', '0px');
+		            }
+		          
+
+		    });
+		});
+
+
+	  </script>
+
+	  <script type="text/javascript">
+		$(function(){
+		    var title2 = $('#content-title1').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 180 > title2 ) {
+		                    $('#content-title').css({
+						        position:'absolute',
+						        top: title2 - 180
+						    });
+								          
+		        
+		            }
+		    });
+		});
+		
+		$(window).resize(function(){
+		    var title2 = $('#content-title1').offset().top;
+
+		    $(window).scroll(function(){
+		            if( $(window).scrollTop() + 180 > title2 ) {
+		                    $('#content-title').css({
+						        position:'absolute',
+						        top: title2 - 180
+						    });
+								          
+		        
+		            }
+		    });
+		});
+	  </script> -->
+
+	  
+
+     <!--  <script type="text/javascript">
+        $(window).scroll(function() {
+		    $("#menu-header").stop().animate({
+		       backgroundColor: $(window).scrollTop() > 1 ? 'rgba(35,35,35, 1)' : 'rgba(35,35,35, 0)',
+		    }, 300);
+		    $(".title h1").stop().animate({
+		       color: $(window).scrollTop() > 1 ? 'white' : 'black',
+		    }, 300);
+		});
+      </script>
+ -->
+      
+
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" id="menu-header">
+	        <div class="row menu-row">
+	          <div class="col-md-4 logo">
+	          	<img src="img/logo.png" class="img-responsive img-logo">
+	          </div>
+	          <div class="col-md-8 title">
+	          	<h1>Medical image analysis</h1>
+	          </div>
+	        </div>
+        </div>
+      </div>
+      <div class="row subpart1">
+        <div class="col-md-12" id="content-title">
+          <h1>Nerve Segmentation</h1>
+        </div>
+        
+        <div class="col-md-12 content" id="content1">
+	        <div class="container">
+	        	<div class="row content-row">
+		        	<div class="col-md-12 col-1">
+		        		
+		        		<h2>Why we want Narcotic free pain management</h2>
+		        		<p>The most common way of managing patients pain during and after a surgical procedure is the use of Narcotic analgesics. Narcotics attach to receptors on nerves in the brain that increase the general threshold to pain and reduce the perception of pain. They bring a large bevy of unwanted side-effects as strong potential for addiction, low blood pressure, tolerance to pain medication, cardiovascular Effects, Respiratory Problems, even respiratory depression that can lead to death. Specially old and weakened persons suffer from side-effects caused by narcotics. Nevertheless, effective operative and postoperative pain control is an essential component of the care of the surgical patient.</p>
+
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+		        
+		        
+
+
+
+
+		<div class="col-md-12 content" id="content12">
+			<div class="container">
+		        <div class="row content-row row2">
+		        	<div class="col-md-12 our-mission">
+		        		
+		        		<h2>Our Mission</h2>
+		        		<p>Our mission is to improve pain management in the future through the use of indwelling catheters that block or mitigate pain at the source. Pain management catheters provide excellent postoperative pain relief, especially for shoulder, leg, arm, ankle and knee surgery. They reduce post-operative risks, lead to patients comfort and therefore satisfaction and earlier mobilization. A critical step in effectively inserting a patient&#39;s pain management catheter is accurately identifying nerve structures in ultrasound images. Our goal was to have the computer create a region of interest to aid in the detection of this nerve and possibly create a computer guided needle to minimize the pain endured whilst this procedure is performed. The video below is the results of our deep net's performance on images it did not train on.</p>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+		        
+
+		<div class="col-md-12 content" id="content13">
+			<div class="container">
+		        <div class="row content-row">
+		        	<div class="col-md-12 youtube-container">
+		        		<h2>Brachial Plexus Detection in Ultrasound Images and Videos</h2>
+		        		<iframe width="85%" height="500"
+							src="https://www.youtube.com/embed/P6bMC-jns0k">
+						</iframe>
+		        	</div>
+		        </div>
+	        </div>	
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

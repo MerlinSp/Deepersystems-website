@@ -1,0 +1,284 @@
+#menu-header {
+
+	position: fixed;
+	top:0px;
+	width:100%; 
+	z-index:9999;
+	height: 100px;
+	background-color: rgba(35,35,35, 1);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-bottom: 10px;
+}
+
+#content-title {
+	display: flex;
+	margin-top: 100px;
+	height: 350px;
+	background: rgba(24, 33, 201, 1);
+	align-items: center;
+	z-index: 1000;
+	justify-content: center;
+}
+
+.partner-title-container {
+	display: flex;
+	height: 120px;
+	background: rgba(35,35,35, 0.90);
+	align-items: center;
+	z-index: 1000;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.partner-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-left: 35px;
+	padding-right: 35px;
+	
+}
+
+.partner-title h1 {
+	margin-right: auto;
+}
+
+body {
+	background: url('../img/background.png');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-family: "Ubuntu" !important;
+	color: white;
+	font-size: 50px;
+	font-weight: 400;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.img-logo {
+	max-height: 60px;
+	padding-left: 30px;
+}
+
+.menu-row {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.title h1 {
+	font-family: "Ubuntu" !important;
+	color: white;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 30px;
+	
+}
+
+.title {
+	margin-left: auto;
+}
+
+
+
+p {
+	padding: 35px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: "Karla" !important;
+	font-size: 22px;
+	text-align: justify;
+}
+
+.hr-row {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin-top: 80px;
+}
+
+h2 {
+	padding: 35px;
+	font-family: "Ubuntu" !important;
+	font-size: 32px;
+	
+}
+
+.facebook-button, .linkedin-button, .mail-button {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.15);
+	margin-left: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none !important;
+
+}
+
+i {
+	color: white;
+	text-decoration: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.facebook-button:hover, .linkedin-button:hover, .mail-button:hover {
+	height: 67px;
+	width: 67px;
+	margin-left: 43px;
+
+
+}
+
+.shadow-item {
+	-webkit-box-shadow: -1px 0px 22px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: -1px 0px 22px 0px rgba(0,0,0,0.62);
+    box-shadow: -1px 0px 22px 0px rgba(0,0,0,0.62);
+}
+
+.partner-content {
+	background-color: white;
+}
+
+.partner-container {
+	padding-top: 150px;
+}
+
+.img-uni {
+	max-height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.partner-img {
+	float: left;
+	max-height: 500px;
+	padding-right: 40px;
+	padding-left: 35px;
+}
+
+.partner-stud {
+	padding: 35px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 150px;
+}
+
+.partner-img-text {
+	padding: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+	#pit2 {
+		display: flex;
+		align-items: center;
+	}
+
+	#pit2 p {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+
+.uni-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	margin-left: 0px;
+	margin-right: 80px;
+}
+
+.uni-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.social-container {
+	display: flex;
+	padding-left: 200px;
+	padding-bottom: 50px;
+}
+
+h5 {
+	color: rgba(35,35,35, 0.7);
+}
+
+#uni2-vital img, #uni1-joao img, #fred-uni1 img {
+	padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+	.partner-title h1 {
+		font-size: 30px;
+		margin-right: 20px;
+		text-align: left;
+	}
+
+	.facebook-button, .linkedin-button, .mail-button {
+		height: 40px;
+		width: 40px;
+		margin-left: 5px;
+	}
+
+	.partner-title {
+		padding-right: 10px;
+		justify-content: center;
+	}
+
+	.partner-img {
+		margin-bottom: 30px;
+	}
+
+	.partner-container {
+		padding-top: 30px;
+	}
+
+	.partner-stud {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.uni-1 {
+		margin-right: 0px;
+	}
+
+	.partner-img-text {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+	}
+
+	.partner-img {
+		align-self: center;
+		object-fit: contain;
+
+	}
+
+
+}
