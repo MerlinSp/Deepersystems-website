@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
+<html>
+  <head>
+      <title>Krisart Cabeleireiro</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/management-team2.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,300,200,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      
+      <script
+		  src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+		  integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+		  crossorigin="anonymous"></script>
+	  <script
+		  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		  crossorigin="anonymous"></script>
+
+	  <script type="text/javascript" src="js/TweenLite.min.js"></script>
+      <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  	  
+  	  <!-- <script type="text/javascript">
+	  	$(function(){
+
+	  		var img1top = $('#img-1').offset().top;
+	  		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+			var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+	  	  	$("#img-1").on({
+			    mouseenter: function () {
+  	
+			    	$('html, body').animate({ scrollTop:  $('#img-1').offset().top - 150 }, '400');
+			    	$('#img-1').css({position: 'fixed', top: img1top - $(window).scrollTop()});
+			    	var imgheight = $('#img-1').height(); 
+				    $('#img-1').css({'width': '+=100px', 'max-height': '+=137px','height': '+=137px', 'z-index': '1000'});
+				    $('#img-1').animate({top: (h / 2) - ((imgheight/2)) }, '400');
+
+			       
+			    },
+			    mouseleave: function () {
+			        $('#img-1').css('width', '-=100px');
+			        $('#img-1').css('height', 'auto');
+			        $('#img-1').css('max-height', '-=137px');
+			        $('#img-1').css({position: 'static'});
+			    }
+			});
+		});
+  	  </script> -->
+
+  	  <script type="text/javascript">
+  	  	//IE doesn't transform-style:preserve-3d.
+		// for IE try https://codepen.io/rhernando/pen/vjGxH
+			$(function(){
+
+				//using TweenLite.set() takes care of all vendor-prefixes
+				TweenLite.set(".cardWrapper", {perspective:800});
+				TweenLite.set(".card", {transformStyle:"preserve-3d"});
+				TweenLite.set(".back", {rotationY:-180});
+				TweenLite.set([".back", ".front"], {backfaceVisibility:"hidden"});
+
+				$(".cardWrapper").hover(
+				  function() {
+				    TweenLite.to($(this).find(".card"), 1.2, {rotationY:180, ease:Back.easeOut});
+				  },
+				  function() {
+				    TweenLite.to($(this).find(".card"), 1.2, {rotationY:0, ease:Back.easeOut});  
+				  }
+				);
+
+				//a nice little intro;)
+				TweenMax.staggerTo($(".card"), 1, {rotationY:-180, repeat:1, yoyo:true}, 0.1);
+
+			});
+
+  	  </script>
+
+  	  <script type="text/javascript">
+		  	$(function(){
+  	
+
+		  	  	$(document).ready(function() {
+				    var divHeight = $('#img-1').height(); 
+				    $('.partner-img').css('height', divHeight+'px');
+				});
+
+				$(window).resize(function() {
+				    var divHeight = $('#img-1').height(); 
+				    $('.partner-img').css('height', divHeight+'px');
+				});
+			});
+
+  	  </script>
+
+  	</head>
+  	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" id="menu-header">
+	        <div class="row menu-row">
+	          <div class="col-md-4 logo">
+	          	<img src="img/logo.png" class="img-responsive img-logo">
+	          </div>
+	          <div class="col-md-8 title">
+	          	
+	          </div>
+	        </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12" id="content-title">
+          <h1>Nerve Segmentation</h1>
+        </div>
+
+        <div class="col-md-12" id="partner-thumbs-cont">
+        	<div class="container">
+        		<div class="row" id="row1">
+        			<div class="col-md-4 partner-img" id="partner-img-1" >
+						<div class="cardWrapper">
+						  <div class="card">
+						    <div class="cardFace front"><img src="img2/alex.jpg" class="img-responsive" id="img-1"></div>
+						    <div class="cardFace back">
+						    	
+						    	<div class="col-md-12 partner-stud">
+			        			
+				        			<h3>Alexander Lehmann</h3>
+
+				        			<hr>
+				        			<a href="">click for full bio</a>
+				        			<div class="uni-1">
+				        				<div>
+				        					<img src="img/alex-uni1.png" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>SUNY Stony Brook | <i>B.S. Physics</i></h4>
+				        					<h5>2000</h5>
+				        				</div>
+				        			</div>
+				        			<div class="uni-2">
+				        				<div>
+				        					<img src="img/alex-uni2.jpg" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>University of Michigan | <i>M.S. Particle Physics</i></h4>
+				        					<h5>2001</h5>
+				        					
+				        				</div>
+				        			</div>
+					        		
+					        	</div>
+
+						    </div>
+						  </div>
+						</div>	
+        			</div>
+        			
+
+    			<div class="col-md-4 partner-img">
+						<div class="cardWrapper">
+						  <div class="card">
+						    <div class="cardFace front"><img src="img2/vitaly.jpg" class="img-responsive"></div>
+						    <div class="cardFace back">
+						    	<div class="col-md-12 partner-stud">
+			        				<h3>Dr. Vitaliy Ziskin</h3>
+			        				
+				        			<hr>
+				        			<a href="">click for full bio</a>
+				        			<div class="uni-1">
+				        				<div>
+				        					<img src="img/alex-uni1.png" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>SUNY Stony Brook | <i>B.S. Physics</i></h4>
+				        					<h5>1998</h5>
+				        				</div>
+				        			</div>
+				        			<div class="uni-2" id="uni2-vital">
+				        				<div>
+				        					<img src="img/vitaliy-uni2.gif" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>University of Michigan | <i>Ph.D Nuclear Physics</i></h4>
+				        					<h5>2005</h5>
+				        				</div>
+				        			</div>
+					        		
+					        	</div>
+
+						    </div>
+						  </div>
+						</div>	
+        		</div>
+        			
+
+    			<div class="col-md-4 partner-img">
+						<div class="cardWrapper">
+						  <div class="card">
+						    <div class="cardFace front"><img src="img2/joao.jpg" class="img-responsive"></div>
+						    <div class="cardFace back">
+						    	<div class="col-md-12 partner-stud">
+					        		<h3>Joao Paulo Farias</h3>
+					        		
+				        			<hr>	
+				        			<a href="">click for full bio</a>
+				        			<div class="uni-1" id="uni1-joao">
+				        				<div>
+				        					<img src="img/joao-uni1.png" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>Universidade Federal do Rio Grande do Norte</h4>
+				        					<h4><i>B.S Computer Science</i></h4>
+				        					<h5>2005</h5>
+				        				</div>
+		        					</div>
+			        			</div>
+						    </div>
+						  </div>
+						</div>	
+        		</div>
+
+
+        		</div>
+        		<div class="row" id="row2">
+        			
+
+        			<div class="col-md-4 partner-img">
+						<div class="cardWrapper">
+						  <div class="card">
+						    <div class="cardFace front"><img src="img2/claude.jpg" class="img-responsive"></div>
+						    <div class="cardFace back">
+						    	<div class="col-md-12 partner-stud">
+			        				<h3>Claudiu Saftoiu</h3>
+			        				
+				        			<hr>
+				        			<a href="">click for full bio</a>
+				        			<div class="uni-1">
+				        				<div>
+				        					<img src="img/claude-uni1.jpg" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>Stuyvesant | <i>Graduated</i></h4>
+				        					<h5>2006</h5>
+				        				</div>
+				        			</div>
+				        			<div class="uni-2" id="uni2-vital">
+				        				<div>
+				        					<img src="img/claude-uni2.gif" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>Brown University | <i>B.S. Computer Science</i></h4>
+				        					<h5>2010</h5>
+				        				</div>
+				        			</div>
+					        		
+					        	</div>
+						    </div>
+						  </div>
+						</div>	
+        			</div>
+        			
+
+        			<div class="col-md-4 partner-img">
+						<div class="cardWrapper">
+						  <div class="card">
+						    <div class="cardFace front"><img src="img2/fred.jpg" class="img-responsive"></div>
+						    <div class="cardFace back">
+						    	<div class="col-md-12 partner-stud">
+			        				<h3>Frederico Caroli</h3>
+			        				
+				        			<hr>
+				        			<a href="">click for full bio</a>
+				        			<div class="uni-1" id="fred-uni1">
+				        				<div>
+				        					<img src="img/frederico-uni1.png" class="img-responsive img-uni">
+				        				</div>
+				        				<div>
+				        					<h4>Universidade Federal Do Rio De Janeiro</h4>
+				        					<h4><i>B.S Computer Science</i></h4>
+				        					<h5>2015</h5>
+				        					
+				        				</div>
+				        			</div>
+					        	</div>
+						    </div>
+						  </div>
+						</div>	
+        			</div>
+
+
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

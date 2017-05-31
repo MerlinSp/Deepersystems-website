@@ -1,0 +1,273 @@
+#menu-header {
+
+	position: fixed;
+	top:0px;
+	width:100%; 
+	z-index:9999;
+	height: 100px;
+	background-color: rgba(35,35,35, 1);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-bottom: 10px;
+}
+
+#content-title {
+	display: flex;
+	margin-top: 100px;
+	height: 350px;
+	background: rgba(24, 33, 201, 1);
+	align-items: center;
+	z-index: 1000;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "Ubuntu" !important;
+	color: white;
+	font-size: 50px;
+	font-weight: 400;
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	max-height: 450px;
+}
+
+#row1, #row2 {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#row2 {
+	margin-bottom: 50px;
+}
+
+.partner-img {
+	height: 450px;
+	width: 33.3%;
+}
+
+#overlayer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: rgba(35,35,35, 0.7);
+}
+
+.cardWrapper{
+  width:100%;
+  height:100%;
+  position:relative;
+  /*background-color:#333;*/
+  float:left;
+  margin-right:10px;
+  cursor:pointer;
+  -webkit-font-smoothing:antialiased;
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+}
+
+.cardFace{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.back {
+	background-color: #dedede;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.front {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.partner-stud {
+	height: 100%;
+	width: 100%;
+	
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.uni-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	margin-bottom: 10px;
+	margin-bottom: auto;
+	
+}
+
+.uni-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.img-uni {
+	max-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h4 {
+	font-size: 15px;
+	font-family: "Karla" !important;
+}
+
+h5 {
+	font-size: 12px;
+	font-family: "Karla" !important;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Ubuntu !important;
+
+}
+
+hr {
+	border: 0;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+a {
+	margin-bottom: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+	h3 {
+		font-size: 20px;
+	}
+
+	hr {
+		margin-bottom: 2px;
+	}
+
+	.uni-1 {
+		margin-top: 10px;
+	}
+
+	.img-uni {
+		max-height: 80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+	#row1{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#row2 {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0px;
+	}
+
+	.col-md-4 {
+		width: 50%;
+	}
+
+	.partner-img {
+		margin-bottom: 60px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 751px) {
+
+	.col-md-4 {
+		width: 75%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 510px) {
+
+	.col-md-4 {
+		width: 85%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 460px) {
+
+	.col-md-4 {
+		width: 95%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 410px) {
+
+	.col-md-4 {
+		width: 100%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 393px) {
+
+	h3 {
+		font-size: 25px;
+	}
+
+	.img-uni {
+		max-height: 70px;
+	}
+}
+
+
+@media only screen and (max-width: 393px) {
+	h4 {
+		font-size: 13px;
+	}
+
+	h5 {
+		font-size: 11px;
+	}
+
+	.uni-img {
+		max-height: 65px;
+	}
+}
